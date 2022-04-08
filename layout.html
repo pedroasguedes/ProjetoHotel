@@ -1,12 +1,103 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Hotel California</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 <body>
+       <!--========================= inicio da barra de navegaçã =================== -->
+       <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">California</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link "  href="index.html">Home</a>
+              </li>
+              
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Acomodação
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="standard.html">Standard</a></li>
+                  <li><a class="dropdown-item" href="Master.html">Master</a></li>
+                  <li><a class="dropdown-item" href="presencial.html">Presencial</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="gastronomia.html">Gastronomia</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Lazer.html">Lazer</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="reservas.html">Reservas</a>
+              </li>
+
+            </ul>
+            
+          </div>
+        </div>
+      </nav>
+
+     <!-- =========================== Fim da barra de navegação ===================== -->
+
+<!-- ======================inicio do caroseul==================== -->
+<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/hotel30.webp" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="img/hotel35.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="img/hotel36.jpg" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+<!-- ======================fim do caroseul======================= -->
+
+<div class="conteiner-fluid">
+<div class="row">
+    <div class="col">
+        <form >
+            <label>Faça sua Reserva Aqui</label>
+            <label>Check-In<input type="date" id="checkin" required></label>
+           <label>Check-Out <input type="date" id="checkout" required></label>
+            <input type="submit" value="btnreservar" value="Reservar" > 
+        </form>
+    </div>
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+<script src="js/bootstrap.min.js"></script>
     
 </body>
 </html>
