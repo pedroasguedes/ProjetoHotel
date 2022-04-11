@@ -28,3 +28,11 @@
   background-color: black;
   color: rgb(8, 223, 76);
 }
+.fundo-branco {
+  background-color: white;
+}
+body {
+  background-image: url("../img/hotel6.jpg");
+  background-attachment: fixed;
+  background-size: 100%;
+}
